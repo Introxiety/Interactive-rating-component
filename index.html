@@ -1,49 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Interactive rating component</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | Interactive rating component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body class="flex-center">
+    <!-- Rating state start -->
+    <main class="flex">
 
-  <!-- Rating state start -->
+    <img src="images/icon-star.svg" alt="" />
+    <h1>How did we do?</h1>
+    <p>
+      Please let us know how we did with your support request. All feedback is
+      appreciated to help us improve our offering!
+    </p>
+    <form action="#" class="flex">
+      <div class="radio-container flex">
+      <label for="one" class="form-control">
+      <input type="radio" name="rating" id="one"/>
+        1
+      </label>
 
-  How did we do?
+      <label for="two" class="form-control">
+      <input type="radio" name="rating" id="two" />
+      2
+      </label>
 
-  Please let us know how we did with your support request. All feedback is appreciated 
-  to help us improve our offering!
+      <label for="three" class="form-control">
+      <input type="radio" name="rating" id="three" />
+      3
+      </label>
 
-  1 2 3 4 5
+      <label for="four" class="form-control">
+      <input type="radio" name="rating" id="four" />
+      4
+      </label>
 
-  Submit
+      <label for="five" class="form-control">
+      <input type="radio" name="rating" id="five" />
+      5
+      </label>
+    </div>
+      <button>Submit</button>
+    </form>
+    </main>
 
-  <!-- Rating state end -->
+ 
+    <!-- You selected -->
+    <!-- Add rating here -->
+    <!-- out of 5 Thank you! We appreciate you taking the time to give a rating. If
+    you ever need more support, don’t hesitate to get in touch! -->
 
-  <!-- Thank you state start -->
+    <!-- Thank you state end -->
 
-  You selected <!-- Add rating here --> out of 5
-
-  Thank you!
-
-  We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch!
-
-  <!-- Thank you state end -->
-
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+  </body>
 </html>
