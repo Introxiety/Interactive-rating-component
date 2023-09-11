@@ -97,7 +97,7 @@ main {
 }
 
 main img {
-  max-width: 4rem;
+  max-width: 3.5rem;
   background-color: #262f38;
   padding: 1.2em;
   border-radius: 50%;
@@ -200,4 +200,11 @@ p {
   background-color: #272e38;
   padding: 0.5em 1em;
   border-radius: 1.5em;
+}
+
+
+@media (min-width:90em){
+  main{
+    max-width: 25rem;
+  }
 }
