@@ -20,8 +20,8 @@ dd {
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul[role='list'],
-ol[role='list'] {
+ul[role="list"],
+ol[role="list"] {
   list-style: none;
 }
 
@@ -60,9 +60,9 @@ select {
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
   html:focus-within {
-   scroll-behavior: auto;
+    scroll-behavior: auto;
   }
-  
+
   *,
   *::before,
   *::after {
@@ -73,110 +73,131 @@ select {
   }
 }
 
-:root{
---White: hsl(0, 0%, 100%);
---Light-Grey: hsl(217, 12%, 63%);
---Medium-Grey: hsl(216, 12%, 54%);
---Dark-Blue: hsl(213, 19%, 18%);
---Very-Dark-Blue: hsl(216, 12%, 8%);
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Light-Grey: hsl(217, 12%, 63%);
+  --Medium-Grey: hsl(216, 12%, 54%);
+  --Dark-Blue: hsl(213, 19%, 18%);
+  --Very-Dark-Blue: hsl(216, 12%, 8%);
 }
 
-body{
-    background-color: black;
-    padding: .3rem;
+body {
+  background-color: black;
+  padding: 0.3rem;
 }
 
-main{
-    font-family: 'Overpass', sans-serif;
-    gap: 1rem;
-    flex-direction: column;
-    max-width: 23rem;
-    background-color: rgba(29,36,46,255);
-    padding: 1.5rem;
-    border-radius: 1rem;
+main {
+  font-family: "Overpass", sans-serif;
+  gap: 1rem;
+  flex-direction: column;
+  max-width: 23rem;
+  background-color: rgba(29, 36, 46, 255);
+  padding: 1.5rem;
+  border-radius: 1rem;
 }
 
-main img{
-    max-width: 4rem;
-    background-color: #262f38;
-    padding: 1.2em;
-    border-radius: 50%;
+main img {
+  max-width: 4rem;
+  background-color: #262f38;
+  padding: 1.2em;
+  border-radius: 50%;
 }
 
-main h1{
-    color: #fafdfe;
+main h1 {
+  color: #fafdfe;
 }
 
-main p{
-    color: #626973;
+main p {
+  color: #626973;
 }
 
-form{
-    flex-direction: column;
-    gap: 2rem;
+form {
+  flex-direction: column;
+  gap: 2rem;
 }
 
-.flex{
-    display: flex;
+.flex {
+  display: flex;
 }
 
-.flex-center{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
-.radio-container{
-    justify-content: space-between;
+.radio-container {
+  justify-content: space-between;
 }
 
-
-
-  input[type="radio"] {
-    appearance: none;
-    background-color: #fff;
-    margin: 0;
- 
-  }
-
-  .form-control{
-    padding: .5rem 1.3rem;
-    background-color: #262f38;
-    color: #626973;
-    border-radius: 50%;
-    font-size: 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    line-height: 2;
-  }
-
-  .form-control:focus-within {
-    background-color:var(--Light-Grey);
-    color: #fafdfe;
-    
-  }
-  
-.form-control:hover{
-    cursor: pointer;
-    background-color: #ff7a10;
+input[type="radio"] {
+  appearance: none;
+  background-color: #fff;
+  margin: 0;
 }
 
-form button{
-    padding: .5em 0;
-    font-size: 1rem;
-    border-radius: 2em;
-    background-color: #ff7a10;
-    font-weight: 500;
-    text-transform: uppercase;
-    color: white;
-    letter-spacing: .2em;
-    border: none;
+.form-control {
+  padding: 0.5rem 1.3rem;
+  background-color: #262f38;
+  color: #626973;
+  border-radius: 50%;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 2;
 }
 
-form button:hover{
-    background-color: #fafdfe;
-    color: #ff7a10;
+.form-control:focus-within {
+  background-color: var(--Light-Grey);
+  color: #fafdfe;
 }
 
+.form-control:hover {
+  cursor: pointer;
+  background-color: #ff7a10;
+  color: white;
+}
+
+form button {
+  padding: 0.5em 0;
+  font-size: 1rem;
+  border-radius: 2em;
+  background-color: #ff7a10;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 0.2em;
+  border: none;
+}
+
+form button:hover {
+  background-color: #fafdfe;
+  color: #ff7a10;
+  cursor: pointer;
+}
+
+.popup-card {
+  font-family: "Overpass", sans-serif;
+  gap: 1.5rem;
+  flex-direction: column;
+  max-width: 23rem;
+  background-color: rgba(29, 36, 46, 255);
+  padding: 2rem 1.5rem;
+  border-radius: 1rem;
+  color: white;
+  text-align: center;
+  display: none;
+}
+
+p {
+  color: #626973;
+}
+.selected-rating {
+  color: #ff7a10;
+  font-weight: 300;
+  background-color: #272e38;
+  padding: 0.5em 1em;
+  border-radius: 1.5em;
+}
